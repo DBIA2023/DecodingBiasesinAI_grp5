@@ -14,7 +14,7 @@ Lukas BRAND, Tathagata CHAKRABORTY, David DÜPJOHANN, José ignacio DONOSO SALAS
 - [Limitations and Discussion](#lim)
 - [Conclusions](#conclu)
 - [References](#ref)
-- 
+  
 
 
 
@@ -186,6 +186,7 @@ After gathering our data, we performed an Ordinary Least Squares regression (OLS
  
 <p align="center"><b>Equation 1: OLS Model</b></p>
 
+<a name="result"></a>
 ## Results 
 
 ### Main Results 
@@ -307,6 +308,7 @@ Table 3: Summary statistics for score for each dataset
 Table 4: Regression Analysis of Score for Dataset 4 (University Variation)
 
 
+<a name="lim"></a>
 ## Limitations 
 Before continuing to discuss the results of this paper it is first important to acknowledge potential limitations of the research design. First, the proxies for the variables of interest might not fully capture the socio-economic variables intended. For example, our classification of names in terms of ethnicity or gender might be flawed and not fully capture relevant nuances - especially as we consulted ChatGPT for the classification. Yet we tried to minimize error by manually cross referencing. Of course our own bias remains though. Further, university names might be a flawed proxy of origin - e.g. people move abroad for studies. Also, a list of ‘only’ 8 universities is not comprehensive, for example we were lacking African universities. Yet, this came as a trade off for ensuring that all universities have a similar QS-ranking. Thereby we hoped to isolate the effect of the country in which the university is located. Finally,  the validity of the OLS regression analysis might be impeded given that the CV scores did not follow a normal distribution.
 
@@ -317,10 +319,12 @@ In light of the market dynamics predominantly shaped by startups, we can tentati
 
 In conclusion of the discussion of our findings, we want to emphasise the arbitrary nature of Talenterias CV ranking algorithm, particularly in the robustness check stage, but also to a lesser extent in the initial study. CV scores vary strongly at the individual candidate level - while averages remain somewhat constant. For example, the female African descent candidate that went to Freie Universität Berlin might expect on average a score of 7.4, but she also might get unlucky or lucky and receive a significantly worse/better score. Even conductiong several different assessments with exact same CVs, nott included in this paper, there was no reasonable hypothesis drivable from the results suited for an ex-post rationalisation of Talenteria’s ranking system. Therefore, we are left with the only option to conclude with a final, albeit untestable hypothesis, namely, that part of the question of why results are so arbitrary might be rooted in the question of why the algorithm changed between the initial and final study. We suspect that they do not have their own algorithm for the CV screening, but rather just access an API - possibly GPT. Thus, it’s highlighted in the literature that this way of using AI don’t provide systematically coherent results. This then can explain the arbitrary variation in scores. For a further study it thus might be interesting to replicate our research design for CVs assessment in GPT. 
 
+<a name="conclu"></a>
 ## Conclusion 
 In this study, we conducted an assessment of the Talenteria platform. While the findings from the literature review and the analysis of cases from the AIIDB led us to expect robust results for the parameters we investigated—gender, age, origin, and ethnicity—our findings do not align with these expectations. On the contrary, all hypotheses are rejected. However, deriving a sense-making explanation for this discrepancy that is empirically testable is not feasible. Therefore, we uphold the finding highlighted by Köchling and Wehner (2020) and their call-to-action for further quantitative research. Particularly, the interface with GPT appears relevant, as many startups are currently leveraging it and will likely continue to do so in the future.
 As a final note, it is essential to acknowledge that although our platform analysis is methodologically robust, the results are primarily influenced by arbitrariness. Arbitrariness, however, forfeits the purpose of algorithms: That is to omit human bias and randomness. Consequently, we do not recommend utilizing Talenteria's CV ranking algorithm for business purposes. However, from an ethical standpoint, these drastic shortcomings displayed by Talenteria raise significant ethical concerns for applicants, who should be able to enjoy a transparent and reliable process. Therefore, the initiative taken by the city of New York with the AI Bias Law (New York City Local Law 144) appears to have far-reaching and desirable practical implications. This initiative aims to ensure fair treatment of applicants and to drive out offerings from the market that advertise with ethical and efficiency-related claims but fail to meet these requirements, by mandating the disclosure of the results of an AI BiasAudit comparable to ours. Thus, it aims to implement a minimal level of protection for both applicants and corporate clients
 
+<a name="ref"></a>
 ## References 
 - Joseph B. Fuller, Manjari Raman, Eva Sage-Gavin, Kristen Hines. (2021). How leaders can improve hiring practices to uncover missed talent pools, close skills gaps, and improve diversity. Retrieved from https://www.hbs.edu/ris/Publication%20Files/hiddenworkers09032021_Fuller_white_paper_33a2047f-41dd-47b1-9a8d-bd08cf3bfa94.pdf
 - Patrick Mückl, Raphael Hillu. (2024). HR und KI: Wo die rechtlichen Fallen lauern. Retrieved from https://www.haufe.de/personal/arbeitsrecht/hr-und-ki-wo-die-rechtlichen-fallen-lauern_76_615394.html
