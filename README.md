@@ -69,28 +69,100 @@ Turning to practical examples of the issue of the societal consequences of AI, t
 <p align="center">
  <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/1a34f33a-f01e-4626-bfd8-0d41a9541b92" alt= "Exhibit 2: _DEI segemented by sector of development" >
 <p/> 
-The issue of DEIs and AI-facilitated discrimination also entails HR Tech with DEIs in HR surging since 2018 (Exh. 8). Out of the 373 DEIs related to specific application domains, approximately 10% pertain to HR applications (Exh. 9). The risks associated with discriminatory or malfunctioning HR technology are notably heightened in the recruitment process (58%), as evidenced by incidents of application rejection due to gender discrimination (Exh. 10). Thus, our analysis focusses on recruitment technology as this part of HR Tech is – based both on our literature review and the AIIDB analyzed - the most prone to discrimination issues and bias. A survey conducted by a Harvard Business School team encompassing over 2,250 executives in the US, UK, and Germany revealed that the primary motivations for utilizing algorithmic tools were efficiency and cost savings. However, a striking 88% of executives acknowledged that their tools were rejecting qualified applicants, a figure that surged to 94% for middle-skilled workers (Fuller et al. 2021). A prominent example is Amazon's biased recruiting system in 2018, which systematically rejected qualified female applicants based on training data biased towards male employees (Exh. 11). However, instances of discrimination based on parameters such as age, origin, immigrant status, and religion are also evident (Exh. 12) resulting in different kinds of harm (Exh. 13). 
 
-
-
-<p align="center">
- <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/b881d0f7-4903-437e-9b2d-6c08d8c0ae2f" alt="Image 3" style="width:40%;">
-
-<p/>
- 
-<p align="center"><b>Exhibit 3: Culminated Development of DEIs in HR as of 03/2023</b></p>
-
-
-<p align="center">
- <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/1fbaf189-bac7-46c0-af64-564e9ccbf33f" alt="Image 4" style="width:40%;">
-
-<p/>
- 
-<p align="center"><b>Exhibit 4: DEI segmented by scope of Application</b></p>
+### _Conclusion of Literature Review and Real-World Digital Ethical Incidents_
+The issue of DEIs and AI-facilitated discrimination also entails HR Tech with DEIs in HR surging since 2018 (Exh. 3). Out of the 373 DEIs related to specific application domains, approximately 10% pertain to HR applications (Exh. 4). The risks associated with discriminatory or malfunctioning HR technology are notably heightened in the recruitment process (58%), as evidenced by incidents of application rejection due to gender discrimination (Exh. 10). Thus, our analysis focusses on recruitment technology as this part of HR Tech is – based both on our literature review and the AIIDB analyzed - the most prone to discrimination issues and bias. A survey conducted by a Harvard Business School team encompassing over 2,250 executives in the US, UK, and Germany revealed that the primary motivations for utilizing algorithmic tools were efficiency and cost savings. However, a striking 88% of executives acknowledged that their tools were rejecting qualified applicants, a figure that surged to 94% for middle-skilled workers (Fuller et al. 2021). A prominent example is Amazon's biased recruiting system in 2018, which systematically rejected qualified female applicants based on training data biased towards male employees. However, instances of discrimination based on parameters such as age, origin, immigrant status, and religion resulting in different kinds of harm (. 
 
 
 | ![Exhibit 3: Culminated Development of DEIs in HR as of 03/2023](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/b881d0f7-4903-437e-9b2d-6c08d8c0ae2f) | ![Exhibit 4: DEI segmented by scope of Application](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/1fbaf189-bac7-46c0-af64-564e9ccbf33f) |
 |:--:|:--:|
 | **Exhibit 3: Culminated Development of DEIs in HR as of 03/2023** | **Exhibit 4: DEI segmented by scope of Application** |
+
+### _Limitations and Research Gaps_
+Consistent with the observations made by Köchling and Wehner (2020) as well as Chen (2023), our literature review highlights a notable dearth of quantitative investigations pertaining to the potential adverse implications, such as biases and discriminatory practices, within the realm of HRM Tech. To address this lacuna, our study aims to bridge this research gap by undertaking a quantitative inquiry into HRM technology, with a specific emphasis on the recruitment domain, particularly the utilization of curriculum vitae (CV) screening procedures. Our scrutiny of extant literature reveals a conspicuous susceptibility to discriminatory practices within this domain. A recurring thematic concern across the reviewed literature is the discussion and documentation of discriminatory incidents, predominantly centered on gender biases. Furthermore, considerations related to age, as well as peripheral discussions surrounding race, ethnicity, and origin, occasionally inferred through proxies such as nomenclature and educational background, also emerge as pertinent themes. These findings align with the exhaustive systematic literature reviews conducted by Köchling and Wehner (2020) and Chen (2023), which collectively encompassed an analysis of over 3,500 scholarly articles within this domain. Subsequently, these identified parameters are further corroborated by real-world instances elucidated in subsequent sections of our discourse. Consequently, the synthesis of insights garnered from the literature review, alongside the parameters elucidated through a cursory examination of the regulatory landscape and quantitative analysis of case studies, informs the methodological framework of our study. This methodology is characterized by a concentrated emphasis on (1) the recruitment process, specifically the screening of curriculum vitae, and (2) the quantitative examination of discriminatory parameters, i.e. (a) gender, (b) age, (c) ethnicity and (d) origin.
+
+## Qualitative Analysis
+
+### Methodology 
+Following advancements in Human Resources technologies, our research aims to uncover biases in CV screening software bolstered by AI. Despite claims of improved efficiency and unbiased selection processes by these new tools, we aim to test this assertion. Thus, we aim to check quantitatively the following hypotheses:
+- Null Hypothesis: Talenteria CV assessment scores are independent of age, gender, ethnicity & origin.
+- Null Hypothesis 1: Talenteria CV assessment scores are affected by candidate age.
+- Null Hypothesis 2: Talenteria CV assessment scores are affected by candidate gender
+- Null Hypothesis 3: Talenteria CV assessment scores are affected by candidate ethnicity.
+- Null Hypothesis 4: Talenteria CV assessment scores are affected by candidate origin.
+
+These hypotheses will help us investigate whether age, gender, ethnicity, or origin have any discernible impact on CV assessment scores within AI-driven CV screening software.
+
+### Case Selection 
+The first step was to choose un the specific software we will test. The tradeoff was to find software that has a significant presence in the market, which is primarily shaped by US startups and not yet consolidated with many new players emerging, and, at the same time, is affordable. We have chosen Talenteria. Talenteria is a CV screening tool that, as its webpage states, utilizes AI to score a talent pool in relation to suitable job searching criteria, enhancing recruitment reach and efficiency. It is highlighted that AI scoring is based only on candidate experience, skills, and education. In summary, they offer to reduce 75% of recruiters' time and remove bias with AI-powered resume screening and scoring. Other features of the tool can be found on the webpage talenteria.com. The chosen software also has a high reach within the industry, as it is embedded in an all-in-one HCM system for medium and large businesses - Lanteria HR, which has over 200K users in 40+ countries. Some well-known customers of the platform are Lufthansa, Warner, Leica, among others. A final advantage is that despite the high price tag of the software (over EUR 500 per month), we could access a free trial, with limitations in time but not in functionalities.
+	A second decision for managing the scope of the research is determining the specific profile of workers we will test within the screening process. This is important because the software has flexible search rules, and candidates are evaluated based on sought-after abilities related to specific tasks of the future laborer. Based on the insights gleaned from our assessment of the AIIDB, which has indicated that a majority of discriminatory events and incidents (DEIs) occur within the technology sector, we have opted for a software development role as the designated profile for our testing endeavors. This choice aligns with the archetype profile prevalent within the sector. The sought profile is illustrated in Box 1.
+
+```
+Title: Software Developer
+Description: We are currently seeking a talented and dedicated Software Engineer to become an integral member of our innovative technology team. The ideal candidate will have a passion for creating cutting-edge software solutions, demonstrate strong problem-solving skills, and have a solid understanding of computer science principles. This role involves collaborating with other engineers, developers, and stakeholders to develop, test, and maintain software applications that meet the needs and expectations of our clients. If you have a knack for tackling complex technical challenges and desire to work in a dynamic, fast-paced environment, we would love to hear from you.
+Department: Product
+Job Category: Technology and Science
+Responsibilities:
+1. Design, develop, and implement software solutions based on system specifications and other stakeholder requirements.
+2. Write clean, maintainable, and well-documented code adhering to industry standards and best practices.
+3. Collaborate with cross-functional teams, including product managers, designers, and other engineers, to define and shape the features and products.
+4. Participate in code reviews to ensure code quality and mentor junior developers in software engineering techniques and principles.
+5. Troubleshoot, debug, and upgrade existing systems to improve performance and resolve any issues that arise in the software.
+6. Continuously learn and incorporate new technologies and methodologies to stay current in the field and enhance the software development practices within the organization.
+Requirements:
+1. Bachelor’s degree in Computer Science, Engineering, or a related technical field, or equivalent work experience.
+2. At least 2 years of professional software development experience with proficiency in one or more programming languages (e.g., Java, C++, Python, JavaScript).
+3. Solid understanding of object-oriented design, data structures, and algorithms.
+4. Experience with the full software development lifecycle, including requirements gathering, design, coding, testing, and deployment.
+5. Familiarity with software engineering tools and best practices (e.g., Git, unit testing, continuous integration, code reviews).
+6. Exceptional problem-solving skills and the ability to work independently or as part of a team to meet project deadlines.
+Employment Type: FULL-TIME
+Location / City: Seattle
+```
+
+Box 1: Profile of the sought worker
+
+### Data Gathering 
+As we aim to unveil potential AI biases in the CVs screening software, the most focalized way is by controlling the inputs we provide to the software. For this purpose, we constructed numerous fake CVs that vary only in the variables we aim to test within our hypothesis, i.e. age, gender, and ethnicity.  Then, we use a common root for every CV, which is stated in Box 2.
+
+```
+Curriculum Vitae 
+Name: [Varies by candidate]
+Age: [Varies by candidate]
+Email: [Name]@gmail.com 
+Summary: Software Developer with 4 years of experience in developing web and mobile applications. Proficient in a range of programming languages, with a focus on frontend development. Eager to join a dynamic team where I can contribute to developing innovative software solutions. 
+Education: Software Engineer, University: [varies by candidate] 
+Experience: 
+Software Developer 
+Company: NextGen Apps Dates: 01 Jan 2021 – 28 Feb 2024 (3 years) 
+Junior Developer 
+Company: WebWorld Technologies Dates: 29 Dec 2019 – 30 Dec 2020 (1 year)
+```
+
+Box 2: Common root for fake CVs
+
+By using common root, we input:
+
+- Name: We prompted ChatGPT to provide the most common combination of first and last names by different ethnicities: White, Latino, African, and Asian. We used a balanced sample per ethnicity and gender. The sample was revised by hand, and we didn't use genderless names. Then, we randomly selected a name per candidate, and we marked in our database the ethnicity and gender associated with such iteration.
+- Age:  We randomized every iteration with age between 25 and 59 years old.
+- University: We used the university to double-check the influence of ethnicity in terms of the candidate's geographical origin. We faced the challenge of selecting universities from different parts of the world that provide the same level of education. Therefore, we chose universities within the range of 93 to 103 in the QS ranking, encompassing institutions from the US, Europe, Latin America, and Asia. The university was then randomly assigned through iteration.
+
+After tailoring the CVs, we uploaded them to the platform and gathered the scores associated with each candidate. We performed this process five times: initially randomizing all variables by iteration, and then varying single variables individually to ensure a robust analysis. Then we gathered data by uploading the same CV 100 times, but changing the email, in order to check we are not receiving random scores.
+
+| Dataset                    | Date Gathered | N (CVs) | Varying Variables       |
+|----------------------------|---------------|---------|--------------------------|
+| Dataset 1 (main study)     | 26.04.23      | 300     | Name (gender, ethnicity) |
+|                            |               |         | Age                      |
+|                            |               |         | University Name (geographical origin) |
+| Dataset 2 (robustness)     | 09.05.23      | 100     | Age                      |
+| Dataset 3 (robustness)     | 09.05.23      | 100     | Name (gender, ethnicity) |
+| Dataset 4 (robustness)     | 09.05.23      | 100     | University Name (geographical origin) |
+| Dataset 5 (robustness)     | 09.05.23      | 100     | No variation             |
+
+Table 1: Overview of the data gathered
+
+
+### Linear Regression 
+After gathering our data, we performed an Ordinary Least Squares regression (OLS) to examine the influence of age, gender, and ethnicity on the candidates' scores. While our analysis doesn't establish causality, it indicates the significance of the statistical correlations, serving as an initial step for a causal study. Our full model is stated in Equation 1. Additionally, to check for algorithmic bias within the software, we expect that each regressor associated with our independent variables (age, gender, ethnicity, and origin) is not significant
 
 
