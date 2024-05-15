@@ -7,6 +7,8 @@ Lukas BRAND, Tathagata CHAKRABORTY, David DÜPJOHANN, José ignacio DONOSO SALAS
 
 ## Table of Contents 
 
+
+
 “The use of data-driven AI models in recruitment processes raises a host of thorny ethical issues, which demand forethought and diligent assessment on the part of both system designers and procurers.”
 
  By Dr David Leslie, director of ethics and responsible innovation research at The Alan Turing Institute
@@ -259,8 +261,6 @@ The variation in average scores given university of origin is higher, ranging fr
 
 Table 3: Summary statistics for score for each dataset
 
-![exhibit 8](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/e9cc6f00-d9fd-401f-94cf-76ae9b00365a)
-
 <p align="center">
 <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/e9cc6f00-d9fd-401f-94cf-76ae9b00365a" alt= "Exhibit 8: _Distribution of scores for each robustness study" >
 
@@ -268,3 +268,74 @@ Table 3: Summary statistics for score for each dataset
  
 <p align="center"><b>Exhibit 8:  Distribution of scores for each robustness study (Dataset 1, Mainstudy)</b></p>
 
+<p align="center">
+<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abd9dae1-ecb1-4548-905d-309573eaf6ce" alt= "Exhibit 9 >
+
+<p/>
+ 
+<p align="center"><b>Exhibit 9</b></p>
+
+|                             | Coefficient | (std error) |
+|-----------------------------|-------------|-------------|
+| Constant                    |  7.638***   |   (0.175)   |
+| Freie Universität Berlin, Germany | -0.4975** |   (0.247)   |
+| POSTECH, South Korea        |  0.7373***  |   (0.282)   |
+| UC, Chile                   |  -0.1079    |   (0.267)   |
+| Purdue University, US       |  1.1024***  |   (0.291)   |
+| University of Wisconsin- Madison, US | 0.3079  |   (0.267)   |
+| UNAM, Mexico                |  -0.0266    |   (0.256)   |
+| UBA, Argentina              |  -0.2469    |   (0.274)   |
+
+| R-Squared | Adjusted R-Squared | F-Statistic |
+|-----------|--------------------|-------------|
+|   0.324   |        0.273       |    6.308    |
+
+- *, **, *** indicates significance of 90%, 95%, and 99% respectively
+- Standard error reported in brackets 
+Table 4: Regression Analysis of Score for Dataset 4 (University Variation)
+
+
+## Limitations 
+Before continuing to discuss the results of this paper it is first important to acknowledge potential limitations of the research design. First, the proxies for the variables of interest might not fully capture the socio-economic variables intended. For example, our classification of names in terms of ethnicity or gender might be flawed and not fully capture relevant nuances - especially as we consulted ChatGPT for the classification. Yet we tried to minimize error by manually cross referencing. Of course our own bias remains though. Further, university names might be a flawed proxy of origin - e.g. people move abroad for studies. Also, a list of ‘only’ 8 universities is not comprehensive, for example we were lacking African universities. Yet, this came as a trade off for ensuring that all universities have a similar QS-ranking. Thereby we hoped to isolate the effect of the country in which the university is located. Finally,  the validity of the OLS regression analysis might be impeded given that the CV scores did not follow a normal distribution.
+
+## Discussion 
+To summarize, we fail to reject a Null hypothesis. In both the initial and robustness examination, we find that candidates' age, gender and ethnicity is not significant. Further we do not observe a systematic (and logical) effect of country of origin - through university name - on CV assessment score. While we observe that graduating from Purdue University and Freie Universität Berlin significantly affects scores, this is difficult to explain in the light of “systematic” biases - e.g. there is no pertaining societal bias that might explain this algorithmic bias (to our knowledge). This implies the non (systematic) discriminatory nature of the Talenteria algorithm, and as such would seem like a good thing. We speculate that the reason that we do not find bias roots in the fact that we, for example proxy candidate gender and ethnicity through name, as it is common HR practice, that the algorithm purposely overlooks names and age (Upadhyay & Khandelwal 2018). Yet, we cannot verify this ultimately as software documentation (for the free version of Talenteria) is ambiguous. Further, the output files we received, at least, still contained full names, if not age. Drawing upon the literature review, particularly the works of Köchling and Wehner (2020) as well as Chen (2023), it becomes apparent that employing quantitative tests to analyze HR Tech platform discrimination and bias issues proves insightful, thus addressing a notable gap in the existing literature. Furthermore, qualitative assessments, which often rely on traditional literature regarding discrimination in the workplace, even without the utilization of AI, are deemed insufficient in providing a comprehensive depiction of the issue. Similarly, the selected cases included in the AIIDB, where selection int the database is driven by their media prominence, offer insights in trends of the entire ecosystem but does not allow the inference of discrimination to individual HR Tech SaaS, particularly CV screening. However, the categories and number of parameters that our quantitative analysis has identified as statistically insignificant are indeed surprising, given the general acknowledgment within both the database and academic literature, as well as practical HR and diversity management contexts, of gender discrimination, exemplified by cases such as the Amazon incident and the recurrent mention of gender in the literature reviews' selected articles.
+
+In light of the market dynamics predominantly shaped by startups, we can tentatively infer that the quality of offerings from these emerging entities may not consistently meet expectations - both by users and clients. Given the specific organisational design of our object of investigation Talenteria it might be worth further investigating whether these quality issues are particularly prevalent in instances where a recruiting application of a given offering is built upon an established application, such as the Talenteria’s parent company Lanteria, known for collaborations with entities like Lufthansa and Warner Bros, primarily within the payroll management and connectivity HR Tech segments - the most established yet least innovative HR tech segment. The affiliation with the parent company may also imply that, assuming the training data of the model has not been disclosed, training data may be sourced from existing clients, particularly larger companies in the USA and Germany. However, these datasets may be limited and biased in terms of discrimination parameters due to existing regulatory requirements stemming from both labor and data protection laws. Consequently, such datasets may inadequately train the model. This effect may be particularly pronounced in young startups, thus warranting further investigation into longer-established, larger, and more highly valued companies from various regions (such as Personio in Germany).Furthermore, in terms of the legal framework, it is conceivable that discrimination parameters assumed to be fulfilled during application may not be duly considered due to regulations, such as the German AGG (Allgemeines Gleichbehandlungsgesetz), pertinent to applications like those used by Lufthansa. As elucidated by Upadhyay and Khandelwal (2018), this could result in hard-coding practices that overlook certain discriminatory factors, potentially compromising the accuracy of the model. Consequently, it is plausible to hypothesize that the operationalization of ethics within such applications may come at the expense of functionality. This hypothesis underscores the need for further research into the delicate balance between ethical considerations and operational efficiency in such contexts.
+
+In conclusion of the discussion of our findings, we want to emphasise the arbitrary nature of Talenterias CV ranking algorithm, particularly in the robustness check stage, but also to a lesser extent in the initial study. CV scores vary strongly at the individual candidate level - while averages remain somewhat constant. For example, the female African descent candidate that went to Freie Universität Berlin might expect on average a score of 7.4, but she also might get unlucky or lucky and receive a significantly worse/better score. Even conductiong several different assessments with exact same CVs, nott included in this paper, there was no reasonable hypothesis drivable from the results suited for an ex-post rationalisation of Talenteria’s ranking system. Therefore, we are left with the only option to conclude with a final, albeit untestable hypothesis, namely, that part of the question of why results are so arbitrary might be rooted in the question of why the algorithm changed between the initial and final study. We suspect that they do not have their own algorithm for the CV screening, but rather just access an API - possibly GPT. Thus, it’s highlighted in the literature that this way of using AI don’t provide systematically coherent results. This then can explain the arbitrary variation in scores. For a further study it thus might be interesting to replicate our research design for CVs assessment in GPT. 
+
+## Conclusion 
+In this study, we conducted an assessment of the Talenteria platform. While the findings from the literature review and the analysis of cases from the AIIDB led us to expect robust results for the parameters we investigated—gender, age, origin, and ethnicity—our findings do not align with these expectations. On the contrary, all hypotheses are rejected. However, deriving a sense-making explanation for this discrepancy that is empirically testable is not feasible. Therefore, we uphold the finding highlighted by Köchling and Wehner (2020) and their call-to-action for further quantitative research. Particularly, the interface with GPT appears relevant, as many startups are currently leveraging it and will likely continue to do so in the future.
+As a final note, it is essential to acknowledge that although our platform analysis is methodologically robust, the results are primarily influenced by arbitrariness. Arbitrariness, however, forfeits the purpose of algorithms: That is to omit human bias and randomness. Consequently, we do not recommend utilizing Talenteria's CV ranking algorithm for business purposes. However, from an ethical standpoint, these drastic shortcomings displayed by Talenteria raise significant ethical concerns for applicants, who should be able to enjoy a transparent and reliable process. Therefore, the initiative taken by the city of New York with the AI Bias Law (New York City Local Law 144) appears to have far-reaching and desirable practical implications. This initiative aims to ensure fair treatment of applicants and to drive out offerings from the market that advertise with ethical and efficiency-related claims but fail to meet these requirements, by mandating the disclosure of the results of an AI BiasAudit comparable to ours. Thus, it aims to implement a minimal level of protection for both applicants and corporate clients
+
+#References 
+- Joseph B. Fuller, Manjari Raman, Eva Sage-Gavin, Kristen Hines. (2021). How leaders can improve hiring practices to uncover missed talent pools, close skills gaps, and improve diversity. Retrieved from https://www.hbs.edu/ris/Publication%20Files/hiddenworkers09032021_Fuller_white_paper_33a2047f-41dd-47b1-9a8d-bd08cf3bfa94.pdf
+- Patrick Mückl, Raphael Hillu. (2024). HR und KI: Wo die rechtlichen Fallen lauern. Retrieved from https://www.haufe.de/personal/arbeitsrecht/hr-und-ki-wo-die-rechtlichen-fallen-lauern_76_615394.html
+- Scott W. O'Connor. (2020). What is Digital HR? How Technology is Changing the Field. Retrieved from https://graduate.northeastern.edu/resources/what-is-digital-hr/
+- Rodgers, W., Murray, J. M., Stefanidis, A., Degbey, W. Y., & Tarba, S. Y. (2023). An artificial intelligence algorithmic approach to ethical decision-making in human resource management processes. Human Resource Management Review, 33(1), Article 100925. https://doi.org/10.1016/j.hrmr.2022.100925
+- Fernández-Martínez, C. & Fernández, A. (2020). AI and recruiting software: Ethical and legal implications. Paladyn, Journal of Behavioral Robotics, 11(1), 199-216. https://doi.org/10.1515/pjbr-2020-0030
+- Gupta, Aashima & Mishra, Mridula. (2022). Ethical Concerns While Using Artificial Intelligence in Recruitment of Employees. Business Ethics and Leadership. 6. 6-11. 10.21272/bel.6(2).6-11.2022.
+- Upadhyay, A.K. and Khandelwal, K. (2018), "Applying artificial intelligence: implications for recruitment", Strategic HR Review, Vol. 17 No. 5, pp. 255-258. https://doi.org/10.1108/SHR-07-2018-0051
+- Köchling, A., Wehner, M.C. Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development. Bus Res 13, 795–848 (2020). https://doi.org/10.1007/s40685-020-00134-w
+- Criado, Natalia, and Jose M Such, 'Digital Discrimination', in Karen Yeung, and Martin Lodge (eds), Algorithmic Regulation (Oxford, 2019; online edn, Oxford Academic, 24 Oct. 2019), https://doi.org/10.1093/oso/9780198838494.003.0004, accessed 15 May 2024.
+- Meijerink, J., Boons, M., Keegan, A., & Marler, J. (2021). Algorithmic human resource management: Synthesizing developments and cross-disciplinary insights on digital HRM. The International Journal of Human Resource Management, 32(12), 2545–2562. https://doi.org/10.1080/09585192.2021.1925326
+- Chen, Z. Ethics and discrimination in artificial intelligence-enabled recruitment practices. Humanit Soc Sci Commun 10, 567 (2023). https://doi.org/10.1057/s41599-023-02079-x
+Rodgers, W., Murray, J. M., Stefanidis, A., Degbey, W. Y., & Tarba, S. Y. (2023). An artificial intelligence algorithmic approach to ethical decision-making in human resource management processes. Human Resource Management Review, 33(1), Article 100925. https://doi.org/10.1016/j.hrmr.2022.100925
+- Fernández-Martínez, C. & Fernández, A. (2020). AI and recruiting software: Ethical and legal implications. Paladyn, Journal of Behavioral Robotics, 11(1), 199-216. https://doi.org/10.1515/pjbr-2020-0030
+- Gupta, Aashima & Mishra, Mridula. (2022). Ethical Concerns While Using Artificial Intelligence in Recruitment of Employees. Business Ethics and Leadership. 6. 6-11. 10.21272/bel.6(2).6-11.2022.
+- Upadhyay, A.K. and Khandelwal, K. (2018), "Applying artificial intelligence: implications for recruitment", Strategic HR Review, Vol. 17 No. 5, pp. 255-258. https://doi.org/10.1108/SHR-07-2018-0051
+- Köchling, A., Wehner, M.C. Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development. Bus Res 13, 795–848 (2020). https://doi.org/10.1007/s40685-020-00134-w
+- Criado, Natalia, and Jose M Such, 'Digital Discrimination', in Karen Yeung, and Martin Lodge (eds), Algorithmic Regulation (Oxford, 2019; online edn, Oxford Academic, 24 Oct. 2019), https://doi.org/10.1093/oso/9780198838494.003.0004, accessed 15 May 2024.
+- Meijerink, J., Boons, M., Keegan, A., & Marler, J. (2021). Algorithmic human resource management: Synthesizing developments and cross-disciplinary insights on digital HRM. The International Journal of Human Resource Management, 32(12), 2545–2562. https://doi.org/10.1080/09585192.2021.1925326
+- Chen, Z. Ethics and discrimination in artificial intelligence-enabled recruitment practices. Humanit Soc Sci Commun 10, 567 (2023). https://doi.org/10.1057/s41599-023-02079-x
+- Benjamin, R. (2020). Race after technology: Abolitionist tools for the New Jim Code. Polity.
+- Cave, S., & Dihal, K. (2020). The whiteness of ai. Philosophy & Technology, 33(4), 685–703. https://doi.org/10.1007/s13347-020-00415-6
+- Drage, E., & Mackereth, K. (2022a). Does ai debias recruitment? Race, gender, and ai’s “eradication of difference.” Philosophy & Technology, 35(4), 89. https://doi.org/10.1007/s13347-022-00543-1
+- Drage, E., & Mackereth, K. (2022b). Does ai debias recruitment? Race, gender, and ai’s “eradication of difference.” Philosophy & Technology, 35(4), 89. https://doi.org/10.1007/s13347-022-00543-1
+- Lee, M. K. (2018). Understanding perception of algorithmic decisions: Fairness, trust, and emotion in response to algorithmic management. Big Data & Society, 5(1), 205395171875668. https://doi.org/10.1177/2053951718756684
+- Raghavan, M., Barocas, S., Kleinberg, J., & Levy, K. (2020). Mitigating bias in algorithmic hiring: Evaluating claims and practices. Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency, 469–481. https://doi.org/10.1145/3351095.3372828
+- Sánchez-Monedero, J., Dencik, L., & Edwards, L. (2020). What does it mean to “solve” the problem of discrimination in hiring?: Social, technical and legal perspectives from the UK on automated hiring systems. Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency, 458–468. https://doi.org/10.1145/3351095.3372849
+
+- Databases utilized: 
+AI Incidents Database (AIIDB) (https://incidentdatabase.ai/) 
