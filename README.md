@@ -177,3 +177,14 @@ After gathering our data, we performed an Ordinary Least Squares regression (OLS
 ### Main Results 
 
 The analysis of Dataset 1, our primary dataset where all independent variables vary, reveals only marginal differences in CV scores across variation in our demographic factors, namely, name, age, and university of origin. 80% of the submitted CVs receive a score of 5.87/10, 12% a score of 6.20/10, and 6.3% a score of 5.53/10 (see exh 5). This suggests that name (and thus ethnicity and gender), age, and university of origin only have limited impact on the overall score, indicating a small effect size. It also reflects discretional jumps when variables vary.
+
+<p align="center">
+ <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/31c14fae-bcb3-4d6f-b251-34a400128d5b" alt= "Exhibit 5: _Distribution of Scores, Dataset 1 (main study)" >
+
+<p/>
+ 
+<p align="center"><b>Exhibit 5: Distribution of Scores, Dataset 1 (Main Study)</b></p>
+
+Yet, in order to account for the small observed variation in scores, we conducted OLS regression analysis and compared differences in average score for each category of each variable (see exh 5). While the distribution of scores approximated a normal distribution (see exh 5), a Shapiro test revealed deviations from normality assumptions. Nevertheless collinearity issues were not detected. We ran three regression models. After running Model A, the baseline, we enhanced the model by introducing additional variables. This involved disaggregating variables such as Global South and Global North into dummy variables for each respective university (Model B), as well as creating dummy age categories (Model C). This refinement significantly improved the fit of the model. For an overview of the results see table xyz.
+Concretely, our regression models highlighted that the effects (1) of the majority of the variables on score are not significant, and (2) that the variables whose effect is significant contradict our initial hypothesis. First gender, age and geographical origin (Global North/South) did not significantly influence scores at the conventional significance level of 0.05. This also makes sense given that a comparison of mean score for each category of those variables highlighted a variation of average score of only 0.1 score points (see figure xyz). Candidates of African descent exhibited a statistically significant, albeit weak, positive effect on average scores, contrasting with the non-significance of other ethnicities (see figure xyz). This is surprising given that recruitment discrimination based on “global south” ethnicities is a recurring theme in the academic literature which however is largely qualitative. However, also our analysis of cases in the AIIB - from the cases collected in the database which relies on media coverage - empirically substantiates this claim.
+
