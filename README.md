@@ -22,7 +22,7 @@ HR-tech platforms can assume a variety of functions, spanning from recruiting an
 
 
 <p align="center">
- <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/9634548d-9f43-48b9-a9d1-452ae53a1e5e" alt= "Exhibit 1: _HR Tech Capacities">
+ <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/9634548d-9f43-48b9-a9d1-452ae53a1e5e" alt= "Exhibit 1: _HR Tech Capacities", width= 768 length=361 >
 
 <p/>
  
