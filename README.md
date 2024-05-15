@@ -71,17 +71,26 @@ Turning to practical examples of the issue of the societal consequences of AI, t
 <p/> 
 The issue of DEIs and AI-facilitated discrimination also entails HR Tech with DEIs in HR surging since 2018 (Exh. 8). Out of the 373 DEIs related to specific application domains, approximately 10% pertain to HR applications (Exh. 9). The risks associated with discriminatory or malfunctioning HR technology are notably heightened in the recruitment process (58%), as evidenced by incidents of application rejection due to gender discrimination (Exh. 10). Thus, our analysis focusses on recruitment technology as this part of HR Tech is – based both on our literature review and the AIIDB analyzed - the most prone to discrimination issues and bias. A survey conducted by a Harvard Business School team encompassing over 2,250 executives in the US, UK, and Germany revealed that the primary motivations for utilizing algorithmic tools were efficiency and cost savings. However, a striking 88% of executives acknowledged that their tools were rejecting qualified applicants, a figure that surged to 94% for middle-skilled workers (Fuller et al. 2021). A prominent example is Amazon's biased recruiting system in 2018, which systematically rejected qualified female applicants based on training data biased towards male employees (Exh. 11). However, instances of discrimination based on parameters such as age, origin, immigrant status, and religion are also evident (Exh. 12) resulting in different kinds of harm (Exh. 13). 
 
-<div style="display:flex; justify-content:center; align-items:center;">
-  <div style="text-align:center; margin-right:20px;">
-    <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/b881d0f7-4903-437e-9b2d-6c08d8c0ae2f" alt="Image 3" style="width:40%;">
-    <p>Exhibit 3: Culminated Development of DEIs in HR as of 03/2023</p>
-  </div>
-  <div style="text-align:center; margin-left:20px;">
-    <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/1fbaf189-bac7-46c0-af64-564e9ccbf33f" alt="Image 4" style="width:40%;">
-    <p>Exhibit 4: DEI segmented by scope of Application</p>
-  </div>
-</div>
 
 
+<p align="center">
+ <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/b881d0f7-4903-437e-9b2d-6c08d8c0ae2f" alt="Image 3" style="width:40%;">
+
+<p/>
+ 
+<p align="center"><b>Exhibit 3: Culminated Development of DEIs in HR as of 03/2023</b></p>
+
+
+<p align="center">
+ <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/1fbaf189-bac7-46c0-af64-564e9ccbf33f" alt="Image 4" style="width:40%;">
+
+<p/>
+ 
+<p align="center"><b>Exhibit 4: DEI segmented by scope of Application</b></p>
+
+
+| ![Exhibit 3: Culminated Development of DEIs in HR as of 03/2023](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/b881d0f7-4903-437e-9b2d-6c08d8c0ae2f) | ![Exhibit 4: DEI segmented by scope of Application](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/1fbaf189-bac7-46c0-af64-564e9ccbf33f) |
+|:--:|:--:|
+| **Exhibit 3: Culminated Development of DEIs in HR as of 03/2023** | **Exhibit 4: DEI segmented by scope of Application** |
 
 
