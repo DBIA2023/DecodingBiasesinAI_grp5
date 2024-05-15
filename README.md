@@ -165,4 +165,15 @@ Table 1: Overview of the data gathered
 ### Linear Regression 
 After gathering our data, we performed an Ordinary Least Squares regression (OLS) to examine the influence of age, gender, and ethnicity on the candidates' scores. While our analysis doesn't establish causality, it indicates the significance of the statistical correlations, serving as an initial step for a causal study. Our full model is stated in Equation 1. Additionally, to check for algorithmic bias within the software, we expect that each regressor associated with our independent variables (age, gender, ethnicity, and origin) is not significant
 
+<p align="center">
+ <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/fa5219c6-732a-4160-8ab3-e6986581bef5" alt= "Equation 1: _OLS Model", width= 768 length=361 >
 
+<p/>
+ 
+<p align="center"><b>Equation 1: OLS Model</b></p>
+
+## Results 
+
+### Main Results 
+
+The analysis of Dataset 1, our primary dataset where all independent variables vary, reveals only marginal differences in CV scores across variation in our demographic factors, namely, name, age, and university of origin. 80% of the submitted CVs receive a score of 5.87/10, 12% a score of 6.20/10, and 6.3% a score of 5.53/10 (see exh 5). This suggests that name (and thus ethnicity and gender), age, and university of origin only have limited impact on the overall score, indicating a small effect size. It also reflects discretional jumps when variables vary.
