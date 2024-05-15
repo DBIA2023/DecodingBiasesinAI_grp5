@@ -282,7 +282,7 @@ Table 3: Summary statistics for score for each dataset
 <p align="center"><b>Exhibit 8:  Distribution of scores for each robustness study (Dataset 1, Mainstudy)</b></p>
 
 <p align="center">
-<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abd9dae1-ecb1-4548-905d-309573eaf6ce" alt= "Exhibit 9 >
+<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abd9dae1-ecb1-4548-905d-309573eaf6ce" alt= "Exhibit 9">
 
 <p/>
  
