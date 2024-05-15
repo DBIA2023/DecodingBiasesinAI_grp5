@@ -20,6 +20,9 @@ The advent of algorithmic hiring and the rise of HR tech platforms has completel
   ## General Developments and Trends 
 HR-tech platforms can assume a variety of functions, spanning from recruiting and onboarding to learning/skills management and termination processes (Exh. 1). Established HR Tech functions also include Payroll Management (Statista 2022) which is not examined in this paper as it is not prone to bias. Organizations have the option to procure these diverse functionalities from one or multiple developers or to develop them entirely in-house. However, the latter approach is generally not pursued in SMEs as development costs are deemed as too high. Thus, SMEs but even big companies like Goldman Sachs rely on solutions provided to them by developers and maybe tailored to their needs. The key-promises of HR Tech are that it empowers professionals by automating repetitive tasks, freeing time for strategic initiatives and innovation. By leveraging technology for recruitment and harnessing data-driven analytics, organizations enhance talent acquisition processes and make informed workforce decisions. This transformation not only boosts operational efficiency but also strengthens organizational agility, ensuring adaptability in an ever-evolving digital landscape (O'Connor 2020). 
 
+<div style="text-align: center;">
+  <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/9634548d-9f43-48b9-a9d1-452ae53a1e5e" alt="Exh 1" />
+</div>
 
 ![Exh 1](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/9634548d-9f43-48b9-a9d1-452ae53a1e5e)
 
