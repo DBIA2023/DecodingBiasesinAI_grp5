@@ -256,8 +256,7 @@ Further, dissecting the data - that is the global region - by university of orig
 | Adjusted R-Squared  |   0.019   |   0.245   |   0.260   |
 | F-Statistic         |   1.962   |   9.026   |   8.459   |
 
-- *, **, *** indicates significance at 90%, 95% and 99% respectively
-- Standard error is reported in the brackets 
+*, **, *** indicates significance at 90%, 95% and 99% respectively, Standard error is reported in the brackets 
 
 **Table 2: Regression results for candidate CV scores**
 
@@ -292,7 +291,7 @@ The variation in average scores given university of origin is higher, ranging fr
 <p align="center"><b>Exhibit 8:  Distribution of scores for each robustness study (Dataset 1, Mainstudy)</b></p>
 
 <p align="center">
-<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abd9dae1-ecb1-4548-905d-309573eaf6ce" alt= "Exhibit 9">
+<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abd9dae1-ecb1-4548-905d-309573eaf6ce" alt= "Exhibit 9, Average Score per Variable per Dataset">
 
 <p/>
  
@@ -315,8 +314,7 @@ The variation in average scores given university of origin is higher, ranging fr
 |-----------|--------------------|-------------|
 |   0.324   |        0.273       |    6.308    |
 
-- *, **, *** indicates significance of 90%, 95%, and 99% respectively
-- Standard error reported in brackets 
+*, **, *** indicates significance of 90%, 95%, and 99% respectively, standard error reported in brackets 
 **Table 4: Regression Analysis of Score for Dataset 4 (University Variation)**
 
 </div>
@@ -339,32 +337,23 @@ As a final note, it is essential to acknowledge that although our platform analy
 
 <a name="ref"></a>
 ## References 
-- Joseph B. Fuller, Manjari Raman, Eva Sage-Gavin, Kristen Hines. (2021). How leaders can improve hiring practices to uncover missed talent pools, close skills gaps, and improve diversity. Retrieved from https://www.hbs.edu/ris/Publication%20Files/hiddenworkers09032021_Fuller_white_paper_33a2047f-41dd-47b1-9a8d-bd08cf3bfa94.pdf
-- Patrick Mückl, Raphael Hillu. (2024). HR und KI: Wo die rechtlichen Fallen lauern. Retrieved from https://www.haufe.de/personal/arbeitsrecht/hr-und-ki-wo-die-rechtlichen-fallen-lauern_76_615394.html
-- Scott W. O'Connor. (2020). What is Digital HR? How Technology is Changing the Field. Retrieved from https://graduate.northeastern.edu/resources/what-is-digital-hr/
-- Rodgers, W., Murray, J. M., Stefanidis, A., Degbey, W. Y., & Tarba, S. Y. (2023). An artificial intelligence algorithmic approach to ethical decision-making in human resource management processes. Human Resource Management Review, 33(1), Article 100925. https://doi.org/10.1016/j.hrmr.2022.100925
-- Fernández-Martínez, C. & Fernández, A. (2020). AI and recruiting software: Ethical and legal implications. Paladyn, Journal of Behavioral Robotics, 11(1), 199-216. https://doi.org/10.1515/pjbr-2020-0030
-- Gupta, Aashima & Mishra, Mridula. (2022). Ethical Concerns While Using Artificial Intelligence in Recruitment of Employees. Business Ethics and Leadership. 6. 6-11. 10.21272/bel.6(2).6-11.2022.
-- Upadhyay, A.K. and Khandelwal, K. (2018), "Applying artificial intelligence: implications for recruitment", Strategic HR Review, Vol. 17 No. 5, pp. 255-258. https://doi.org/10.1108/SHR-07-2018-0051
-- Köchling, A., Wehner, M.C. Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development. Bus Res 13, 795–848 (2020). https://doi.org/10.1007/s40685-020-00134-w
-- Criado, Natalia, and Jose M Such, 'Digital Discrimination', in Karen Yeung, and Martin Lodge (eds), Algorithmic Regulation (Oxford, 2019; online edn, Oxford Academic, 24 Oct. 2019), https://doi.org/10.1093/oso/9780198838494.003.0004, accessed 15 May 2024.
-- Meijerink, J., Boons, M., Keegan, A., & Marler, J. (2021). Algorithmic human resource management: Synthesizing developments and cross-disciplinary insights on digital HRM. The International Journal of Human Resource Management, 32(12), 2545–2562. https://doi.org/10.1080/09585192.2021.1925326
-- Chen, Z. Ethics and discrimination in artificial intelligence-enabled recruitment practices. Humanit Soc Sci Commun 10, 567 (2023). https://doi.org/10.1057/s41599-023-02079-x
-Rodgers, W., Murray, J. M., Stefanidis, A., Degbey, W. Y., & Tarba, S. Y. (2023). An artificial intelligence algorithmic approach to ethical decision-making in human resource management processes. Human Resource Management Review, 33(1), Article 100925. https://doi.org/10.1016/j.hrmr.2022.100925
-- Fernández-Martínez, C. & Fernández, A. (2020). AI and recruiting software: Ethical and legal implications. Paladyn, Journal of Behavioral Robotics, 11(1), 199-216. https://doi.org/10.1515/pjbr-2020-0030
-- Gupta, Aashima & Mishra, Mridula. (2022). Ethical Concerns While Using Artificial Intelligence in Recruitment of Employees. Business Ethics and Leadership. 6. 6-11. 10.21272/bel.6(2).6-11.2022.
-- Upadhyay, A.K. and Khandelwal, K. (2018), "Applying artificial intelligence: implications for recruitment", Strategic HR Review, Vol. 17 No. 5, pp. 255-258. https://doi.org/10.1108/SHR-07-2018-0051
-- Köchling, A., Wehner, M.C. Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development. Bus Res 13, 795–848 (2020). https://doi.org/10.1007/s40685-020-00134-w
-- Criado, Natalia, and Jose M Such, 'Digital Discrimination', in Karen Yeung, and Martin Lodge (eds), Algorithmic Regulation (Oxford, 2019; online edn, Oxford Academic, 24 Oct. 2019), https://doi.org/10.1093/oso/9780198838494.003.0004, accessed 15 May 2024.
-- Meijerink, J., Boons, M., Keegan, A., & Marler, J. (2021). Algorithmic human resource management: Synthesizing developments and cross-disciplinary insights on digital HRM. The International Journal of Human Resource Management, 32(12), 2545–2562. https://doi.org/10.1080/09585192.2021.1925326
-- Chen, Z. Ethics and discrimination in artificial intelligence-enabled recruitment practices. Humanit Soc Sci Commun 10, 567 (2023). https://doi.org/10.1057/s41599-023-02079-x
 - Benjamin, R. (2020). Race after technology: Abolitionist tools for the New Jim Code. Polity.
 - Cave, S., & Dihal, K. (2020). The whiteness of ai. Philosophy & Technology, 33(4), 685–703. https://doi.org/10.1007/s13347-020-00415-6
+- Chen, Z. Ethics and discrimination in artificial intelligence-enabled recruitment practices. Humanit Soc Sci Commun 10, 567 (2023). https://doi.org/10.1057/s41599-023-02079-x
+- Criado, Natalia, and Jose M Such, 'Digital Discrimination', in Karen Yeung, and Martin Lodge (eds), Algorithmic Regulation (Oxford, 2019; online edn, Oxford Academic, 24 Oct. 2019), https://doi.org/10.1093/oso/9780198838494.003.0004, accessed 15 May 2024.
 - Drage, E., & Mackereth, K. (2022a). Does ai debias recruitment? Race, gender, and ai’s “eradication of difference.” Philosophy & Technology, 35(4), 89. https://doi.org/10.1007/s13347-022-00543-1
-- Drage, E., & Mackereth, K. (2022b). Does ai debias recruitment? Race, gender, and ai’s “eradication of difference.” Philosophy & Technology, 35(4), 89. https://doi.org/10.1007/s13347-022-00543-1
+- Fernández-Martínez, C. & Fernández, A. (2020). AI and recruiting software: Ethical and legal implications. Paladyn, Journal of Behavioral Robotics, 11(1), 199-216. https://doi.org/10.1515/pjbr-2020-0030
+- Gupta, Aashima & Mishra, Mridula. (2022). Ethical Concerns While Using Artificial Intelligence in Recruitment of Employees. Business Ethics and Leadership. 6. 6-11. 10.21272/bel.6(2).6-11.2022.
+- Joseph B. Fuller, Manjari Raman, Eva Sage-Gavin, Kristen Hines. (2021). How leaders can improve hiring practices to uncover missed talent pools, close skills gaps, and improve diversity. Retrieved from https://www.hbs.edu/ris/Publication%20Files/hiddenworkers09032021_Fuller_white_paper_33a2047f-41dd-47b1-9a8d-bd08cf3bfa94.pdf
+- Köchling, A., Wehner, M.C. Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development. Bus Res 13, 795–848 (2020). https://doi.org/10.1007/s40685-020-00134-w
 - Lee, M. K. (2018). Understanding perception of algorithmic decisions: Fairness, trust, and emotion in response to algorithmic management. Big Data & Society, 5(1), 205395171875668. https://doi.org/10.1177/2053951718756684
+- Meijerink, J., Boons, M., Keegan, A., & Marler, J. (2021). Algorithmic human resource management: Synthesizing developments and cross-disciplinary insights on digital HRM. The International Journal of Human Resource Management, 32(12), 2545–2562. https://doi.org/10.1080/09585192.2021.1925326
+- Patrick Mückl, Raphael Hillu. (2024). HR und KI: Wo die rechtlichen Fallen lauern. Retrieved from https://www.haufe.de/personal/arbeitsrecht/hr-und-ki-wo-die-rechtlichen-fallen-lauern_76_615394.html
 - Raghavan, M., Barocas, S., Kleinberg, J., & Levy, K. (2020). Mitigating bias in algorithmic hiring: Evaluating claims and practices. Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency, 469–481. https://doi.org/10.1145/3351095.3372828
+- Rodgers, W., Murray, J. M., Stefanidis, A., Degbey, W. Y., & Tarba, S. Y. (2023). An artificial intelligence algorithmic approach to ethical decision-making in human resource management processes. Human Resource Management Review, 33(1), Article 100925. https://doi.org/10.1016/j.hrmr.2022.100925
 - Sánchez-Monedero, J., Dencik, L., & Edwards, L. (2020). What does it mean to “solve” the problem of discrimination in hiring?: Social, technical and legal perspectives from the UK on automated hiring systems. Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency, 458–468. https://doi.org/10.1145/3351095.3372849
+- Scott W. O'Connor. (2020). What is Digital HR? How Technology is Changing the Field. Retrieved from https://graduate.northeastern.edu/resources/what-is-digital-hr/
+- Upadhyay, A.K. and Khandelwal, K. (2018), "Applying artificial intelligence: implications for recruitment", Strategic HR Review, Vol. 17 No. 5, pp. 255-258. https://doi.org/10.1108/SHR-07-2018-0051
 
 - Databases utilized: 
 AI Incidents Database (AIIDB) (https://incidentdatabase.ai/) 
