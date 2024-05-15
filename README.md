@@ -196,8 +196,6 @@ Concretely, our regression models highlighted that the effects (1) of the majori
 <p align="center"><b>Exhibit 6: Varaition in mean scores for each (Dataset 1, Mainstudy)</b></p>
 
 <p align="center">
-![exhibit 7](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/15172270-5a04-462e-ac44-35c31207bc41)
-
 <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/15172270-5a04-462e-ac44-35c31207bc41" alt= "Exhibit 7: _ Variation of mean score given university country (Dataset 1, Mainstudy)" >
 
 <p/>
@@ -260,3 +258,13 @@ The variation in average scores given university of origin is higher, ranging fr
 | Dataset 5 (No variation) |  100  | 7.48 |  7.33  | 0.938 | 6.66  |
 
 Table 3: Summary statistics for score for each dataset
+
+![exhibit 8](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/e9cc6f00-d9fd-401f-94cf-76ae9b00365a)
+
+<p align="center">
+<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/e9cc6f00-d9fd-401f-94cf-76ae9b00365a" alt= "Exhibit 8: _Distribution of scores for each robustness study" >
+
+<p/>
+ 
+<p align="center"><b>Exhibit 8:  Distribution of scores for each robustness study (Dataset 1, Mainstudy)</b></p>
+
