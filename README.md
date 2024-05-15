@@ -188,7 +188,6 @@ The analysis of Dataset 1, our primary dataset where all independent variables v
 Yet, in order to account for the small observed variation in scores, we conducted OLS regression analysis and compared differences in average score for each category of each variable (see exh 5). While the distribution of scores approximated a normal distribution (see exh 5), a Shapiro test revealed deviations from normality assumptions. Nevertheless collinearity issues were not detected. We ran three regression models. After running Model A, the baseline, we enhanced the model by introducing additional variables. This involved disaggregating variables such as Global South and Global North into dummy variables for each respective university (Model B), as well as creating dummy age categories (Model C). This refinement significantly improved the fit of the model. For an overview of the results see table xyz.
 Concretely, our regression models highlighted that the effects (1) of the majority of the variables on score are not significant, and (2) that the variables whose effect is significant contradict our initial hypothesis. First gender, age and geographical origin (Global North/South) did not significantly influence scores at the conventional significance level of 0.05. This also makes sense given that a comparison of mean score for each category of those variables highlighted a variation of average score of only 0.1 score points (see figure xyz). Candidates of African descent exhibited a statistically significant, albeit weak, positive effect on average scores, contrasting with the non-significance of other ethnicities (see figure xyz). This is surprising given that recruitment discrimination based on “global south” ethnicities is a recurring theme in the academic literature which however is largely qualitative. However, also our analysis of cases in the AIIB - from the cases collected in the database which relies on media coverage - empirically substantiates this claim.
 
-![exhibit 6](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abcb6fb7-49d6-4904-b469-da8ef223a987)
 <p align="center">
  <img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/abcb6fb7-49d6-4904-b469-da8ef223a987" alt= "Exhibit 6: _Varaition in mean scores for each (Dataset 1, Mainstudy)" >
 
@@ -196,3 +195,68 @@ Concretely, our regression models highlighted that the effects (1) of the majori
  
 <p align="center"><b>Exhibit 6: Varaition in mean scores for each (Dataset 1, Mainstudy)</b></p>
 
+<p align="center">
+![exhibit 7](https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/15172270-5a04-462e-ac44-35c31207bc41)
+
+<img src="https://github.com/DBIA2023/DecodingBiasesinAI_grp5/assets/169889828/15172270-5a04-462e-ac44-35c31207bc41" alt= "Exhibit 7: _ Variation of mean score given university country (Dataset 1, Mainstudy)" >
+
+<p/>
+ 
+<p align="center"><b>Exhibit 7:  Variation of mean score given university country (Dataset 1, Mainstudy)</b></p>
+
+Further, dissecting the data - that is the global region - by university of origin revealed surprising effects. While variation in mean scores were generally subtle, they reached up to 0.2 score points across universities (see exh 7). Unexpectedly, graduates from Freie Universität Berlin exhibited a weak, yet significant, negative association with CV scores, while Purdue University graduates in the US showed a similarly weak, but positive, effect (see exh 7). 
+
+|                     |     A     |     B     |     C     |
+|---------------------|-----------|-----------|-----------|
+| Constant            | 5.8773*** | 5.9427*** | 5.9161*** |
+|                     |   (0.041) |   (0.042) |   (0.031) |
+| Men                 |   0.0087  |  -0.0256  |  -0.0273* |
+|                     |   (0.018) |   (0.016) |   (0.016) |
+| Latino              |   0.0099  |   0.0041  |   0.0069  |
+|                     |   (0.024) |   (0.021) |   (0.021) |
+| Asian               |   0.0100  |   0.0195  |   0.0144  |
+|                     |   (0.024) |   (0.021) |   (0.021) |
+| African             |  0.0683***|  0.0504***|  0.0497***|
+|                     |   (0.024) |   (0.021) |   (0.021) |
+| Age                 |  -0.0004  |  -0.0008  |           |
+|                     |   (0.001) |   (0.001) |           |
+| 20-29               |           |           |   0.0073  |
+|                     |           |           |   (0.023) |
+| 30-39               |           |           |   0.0246  |
+|                     |           |           |   (0.021) |
+| 40-49               |           |           |  -0.0352* |
+|                     |           |           |   (0.021) |
+| Uni Global South    |   0.0232  |           |           |
+|                     |   (0.017) |           |           |
+| Freie Universität   |           |  -0.1873***|  -0.1914***|
+| Berlin, GER         |           |   (0.031) |   (0.031) |
+| POSTECH, South Korea|           |  -0.0233  |  -0.0263  |
+|                     |           |   (0.033) |   (0.033) |
+| UC, Chile           |           |   0.0448  |   0.0428  |
+|                     |           |   (0.031) |   (0.031) |
+| Purdue University,  |           |   0.0832**|   0.0790**|
+| US                  |           |   (0.034) |   (0.034) |
+| R-Squared           |   0.039   |   0.019   |   0.275   |
+| Adjusted R-Squared  |   0.019   |   0.245   |   0.260   |
+| F-Statistic         |   1.962   |   9.026   |   8.459   |
+
+- *,**,*** indicates significance at 90%, 95% and 99% respectively
+- Standard error is reported in the brackets 
+Table 2: Regression results for candidate CV scores
+
+To summarize, despite the average consistency in scores across the tested demographic variables, some (sub-categories) of our demographic variables have a statistically significant effect across models. However, they seem somewhat arbitrary: Why should Freie Universität Berlin graduates be discriminated against? And why do we find - contrary to our assumptions (and maybe biases) that candidates from African descent do (marginally) better? Further, we notice that there is “random” variation at the individual level: For instance, we observe identical CVs - across all variables - receiving different scores, further suggesting potential arbitrariness in Talenterias CV assessment algorithm. Given these unexpected results, we thus deem it crucial to conduct a robustness check. 
+
+### Robustness examination 
+As further elaborated on in the methodology, we conducted a robustness examination focusing on isolating the effects of name (ethnicity and gender), age, and country of origin on the 9th of May. Thus, we created CVs with random selection of only one variable of those categories (See methodology above) and we gather 3 different dataset, one per independent variable, The choice was made to disentangle potential interactions between these variables and to validate the repeatability of our main study results. The results of our robustness check revealed notable discrepancies compared to our initial study. A striking observation was the substantial alteration in summary statistics of the score distribution (see table 3 for summary statistics and exh 8 for visualization). Notably, the median score shifted from 5.87 in the initial study to 7.33 in the robustness study, accompanied by significantly higher standard deviations. This strong change in scores occurred despite CVs being identical to the initial studies - and only one variable varying respectively. Particularly the increased standard deviation is surprising. In fact, our robustness examination included the submission of 100 identical CVs (see Dataset 5), which yielded the highest standard deviation (0.0938) and the widest range (6.66).
+Hence, it seems that the algorithm of Talenteria changed between the 26.04.23 and the 09.05.23. Particularly striking was the substantial increase in standard deviation (and range) of scores, particularly evident in the scenario with no variation in submitted CVs. Given that in HR practices one seeks consistent and fair assessment of candidates, the significant alteration of the Talenteria algorithm between the initial study and the robustness check has to be assessed critically. Further, even at a given moment in time, we observe - especially in the robustness study - large variation in scores despite identical CV submissions. We will now continue to analyze whether these variations can be attributed to the variables we manipulated. Second, the (difference in) variation in CV scores we observe in each dataset can not be attributed to (1) age variation and (2) name variation. Concretely, for each dataset we compared the mean score for each category (see exh 9). For Dataset 2 - where we manipulated age - and Dataset 3 - where we manipulated name and thus gender and ethnicity, mean score for each respective age, gender or ethnicity category does not vary significantly: All scores being close to 7.5. We verified this by having non significant regressors in our respective OLS models. Again, on average, score variation is small, while on the individual level identical candidates might receive strongly differing results. 
+The variation in average scores given university of origin is higher, ranging from 8.7 for graduates of Purdue University (US) to 7.2 for Freie Universität Berlin (Germany). While acknowledging the limitations of our sample size, our regression analysis corroborated the significant effects of graduation from specific universities, such as POSTECH in South Korea (positive effect) and Freie Universität Berlin (negative effect), aligning with our initial study findings (see table 4).
+
+|         |   N   | Mean | Median |  Std  | Range |
+|---------|-------|------|--------|-------|-------|
+| Dataset 1 (All variation) |  300  | 5.88 |  5.87  | 0.155 |  1.2  |
+| Dataset 2 (Age variation) |  100  | 7.51 |  7.33  | 0.686 | 2.56  |
+| Dataset 3 (Name variation) |  100  | 7.42 |  7.33  | 0.738 | 2.56  |
+| Dataset 4 (Uni variation) |  100  | 7.73 |  7.33  | 0.819 | 2.56  |
+| Dataset 5 (No variation) |  100  | 7.48 |  7.33  | 0.938 | 6.66  |
+
+Table 3: Summary statistics for score for each dataset
