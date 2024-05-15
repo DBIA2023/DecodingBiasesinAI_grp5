@@ -1,3 +1,5 @@
 # Site Settings
 
-title: Hi
+name: My Site
+
+theme: minima
