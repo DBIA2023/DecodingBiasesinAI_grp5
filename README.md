@@ -6,6 +6,9 @@ Sciences Po Paris - Spring 2024
 Lukas BRAND, Tathagata CHAKRABORTY, David DÜPJOHANN, José ignacio DONOSO SALAS
 
 ## Table of Contents 
+- [Introduction](#background)
+- [Literature Review](#lit)
+- [Digital Ethics Issues in Practice](#eth)
 
 
 
@@ -83,7 +86,7 @@ The issue of DEIs and AI-facilitated discrimination also entails HR Tech with DE
 ### _Limitations and Research Gaps_
 Consistent with the observations made by Köchling and Wehner (2020) as well as Chen (2023), our literature review highlights a notable dearth of quantitative investigations pertaining to the potential adverse implications, such as biases and discriminatory practices, within the realm of HRM Tech. To address this lacuna, our study aims to bridge this research gap by undertaking a quantitative inquiry into HRM technology, with a specific emphasis on the recruitment domain, particularly the utilization of curriculum vitae (CV) screening procedures. Our scrutiny of extant literature reveals a conspicuous susceptibility to discriminatory practices within this domain. A recurring thematic concern across the reviewed literature is the discussion and documentation of discriminatory incidents, predominantly centered on gender biases. Furthermore, considerations related to age, as well as peripheral discussions surrounding race, ethnicity, and origin, occasionally inferred through proxies such as nomenclature and educational background, also emerge as pertinent themes. These findings align with the exhaustive systematic literature reviews conducted by Köchling and Wehner (2020) and Chen (2023), which collectively encompassed an analysis of over 3,500 scholarly articles within this domain. Subsequently, these identified parameters are further corroborated by real-world instances elucidated in subsequent sections of our discourse. Consequently, the synthesis of insights garnered from the literature review, alongside the parameters elucidated through a cursory examination of the regulatory landscape and quantitative analysis of case studies, informs the methodological framework of our study. This methodology is characterized by a concentrated emphasis on (1) the recruitment process, specifically the screening of curriculum vitae, and (2) the quantitative examination of discriminatory parameters, i.e. (a) gender, (b) age, (c) ethnicity and (d) origin.
 
-## Qualitative Analysis
+## Quantitative Analysis
 
 ### Methodology 
 Following advancements in Human Resources technologies, our research aims to uncover biases in CV screening software bolstered by AI. Despite claims of improved efficiency and unbiased selection processes by these new tools, we aim to test this assertion. Thus, we aim to check quantitatively the following hypotheses:
