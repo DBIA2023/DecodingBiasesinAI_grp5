@@ -1,5 +1,3 @@
 # Site Settings
 
-name: My Site
-
-theme: minima
+markdown: GFM
